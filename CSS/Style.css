@@ -166,6 +166,7 @@ section h2::after{
     margin-bottom: 2rem;
     color: var(--gris-fonce);
     font-size: 1.3rem;
+<<<<<<< HEAD
 }
 
 .competences table {
@@ -230,4 +231,6 @@ footer a {
 footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
+=======
+>>>>>>> edaf045ff1e30e7d78ea1aa24b256cc59850096f
 }
