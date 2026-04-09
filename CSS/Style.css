@@ -231,3 +231,159 @@ footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+
+.contact {
+    width: 600px;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: #FFF;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.contact p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+/* Section projets */
+.projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+/* Carte projet */
+.card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    min-height: 530px; /* +5 cm environ */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image en haut avec bordure violette */
+.card img {
+    width: 100%;
+    height: 280px; /* image agrandie pour occuper plus d’espace */
+    object-fit: cover;
+    display: block;
+    border-bottom: 5px solid var(--violet-doux);
+}
+
+/* Contenu texte */
+.card h3 {
+    color: var(--violet-doux);
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.card p {
+    color: var(--gris-fonce);
+    font-size: 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* Tags */
+.tags {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: var(--gris-clair);
+    color: var(--gris-tres-fonce);
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+/* Liens */
+.links {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.links a:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
+}
+
+/* Titre principal */
+main h1 {
+    text-align: center;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
