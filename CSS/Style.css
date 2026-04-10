@@ -290,7 +290,116 @@ footer a:hover {
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
-/* Section projets */
+
+
+/* --- Page Divertissement --- */
+
+/* Intro section avec marges latérales et texte centré */
+.divertissement-intro {
+    max-width: calc(100% - 16cm); /* 8 cm de chaque côté */
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.divertissement-intro h2 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.divertissement-intro h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
+.divertissement-intro p {
+    font-size: 1.3rem;
+    color: var(--gris-fonce);
+    line-height: 1.8;
+    text-align: center; /* texte centré */
+}
+
+/* Grille principale pour les groupes */
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+/* Groupes uniformes */
+.divertissement-group {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.divertissement-group:hover {
+    transform: translateY(-5px);
+}
+
+/* Titres des groupes */
+.divertissement-group h2 {
+    color: var(--violet-doux);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.divertissement-group h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 0.8rem auto;
+    border-radius: 2px;
+}
+
+/* Carte interne */
+.div-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid var(--violet-doux);
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.div-card p {
+    font-size: 1.15rem;
+    color: var(--gris-fonce);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* --- Ajustement léger pour Projets --- */
+
+/* Harmonisation des paragraphes dans les cartes projets */
+.projets .card p {
+    font-size: 1.15rem;
+    color: var(--gris-fonce);
+    line-height: 1.7;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+/* --- Section Projets --- */
 .projets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -299,91 +408,147 @@ footer a:hover {
     margin: 3rem auto;
 }
 
+/* Titre principal cohérent avec Divertissement */
+.projets-titre {
+    text-align: center;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 4rem 0 2rem 0; /* espace ajouté en haut */
+    position: relative;
+}
+
+.projets-titre::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+}
+
 /* Carte projet */
-.card {
+.projets .card {
     background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.3s ease;
     text-align: center;
-    min-height: 530px; /* +5 cm environ */
+    min-height: 390px; /* réduit de 4 cm (~140px) */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
-.card:hover {
+.projets .card:hover {
     transform: translateY(-5px);
 }
 
-/* Image en haut avec bordure violette */
-.card img {
+.projets .card img {
     width: 100%;
-    height: 280px; /* image agrandie pour occuper plus d’espace */
+    height: 180px;
     object-fit: cover;
-    display: block;
     border-bottom: 5px solid var(--violet-doux);
 }
 
-/* Contenu texte */
-.card h3 {
+.projets .card h3 {
     color: var(--violet-doux);
-    font-size: 1.3rem;
-    margin: 1rem 0 0.5rem 0;
+    font-size: 1.6rem;
+    margin: 1rem 0;
 }
 
-.card p {
+.projets .card p {
+    font-size: 1.1rem;
     color: var(--gris-fonce);
-    font-size: 1rem;
-    margin: 0 1rem 1rem 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    text-align: justify;
 }
 
 /* Tags */
-.tags {
-    text-align: center;
-    margin-bottom: 1rem;
+.projets .tags {
+    margin: 1rem 0;
 }
-
-.tags span {
+.projets .tags span {
     display: inline-block;
     background-color: var(--gris-clair);
     color: var(--gris-tres-fonce);
-    font-size: 0.85rem;
-    padding: 5px 12px;
-    border-radius: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
     margin: 0 5px;
 }
 
 /* Liens */
-.links {
-    text-align: center;
-    margin-bottom: 1rem;
+.projets .links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
-
-.links a {
+.projets .links a {
     text-decoration: none;
-    display: inline-block;
     background-color: var(--violet-doux);
     color: white;
-    padding: 8px 16px;
+    padding: 8px 15px;
     border-radius: 20px;
-    font-size: 0.9rem;
     font-weight: 600;
-    margin: 0 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
-.links a:hover {
+.projets .links a:hover {
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
 
-/* Titre principal */
-main h1 {
+/* Styles spécifiques à la page Passion */
+.passion {
+    padding: 3rem 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+.passion h1 {
+    font-size: 2.5rem;
+    color: var(--violet-fonce);
     text-align: center;
-    color: var(--violet-doux);
-    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.passion p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
     margin-bottom: 2rem;
+    line-height: 1.6;
+    padding: 0 8cm; /* réduit la distance entre les bords à 8 cm */
+}
+
+.passion .bloc {
+    margin-bottom: 4rem;
+}
+
+.passion .bloc img {
+    width: 100vw;
+    height: 15cm;
+    object-fit: cover;
+    margin: 0;
+    display: block;
+}
+
+.passion .bloc h2 {
+    font-size: 2rem;
+    color: var(--violet-doux);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.passion .conclusion p {
+    font-weight: 500;
+    color: var(--orange-vif);
+    margin-top: 2rem;
+    padding: 0 8cm; /* même style que les autres paragraphes */
 }
 
